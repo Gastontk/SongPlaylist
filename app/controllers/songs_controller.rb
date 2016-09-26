@@ -16,10 +16,14 @@ class SongsController < ApplicationController
 			@song.save
 			redirect_to '/songs_index'
 		else 
-			# render plain: params
+			
 			@song = Song.new(song_params)
+			@song.user_id = current_user.id
+			@song.num_added = 1
+			# render plain: @song.user_id
 			if @song.save
-				render plain @song
+				# render plain: @song.title
+				redirect_to '/songs_index'
 			else
 				render plain: "The song is new, but it wasn't saved."
 			end

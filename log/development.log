@@ -34744,3 +34744,1439 @@ Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 13:37:29 -0700
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:51:26 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 13:51:26 -0700
+
+
+Started GET "/" for ::1 at 2016-09-26 13:52:49 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for ::1 at 2016-09-26 13:52:54 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-09-26 13:52:54 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2016-09-26 13:52:55 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-09-26 13:52:57 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"04PxlLEmcnd5worbpQiAiS+HUklVfSh+bOiAxor6XYm60tfRzWKYt11Vt3Wg7r4ZsvW4DG/lQSbS8CSPMEnP4w==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "city"=>"", "state"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = '' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 26ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2016-09-26 13:53:10 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pGjp0EQ+nN03LODkq+iC0lFJYIkYxM4PuY6cpLUK6nzNOc+VOHp2HRO73UquDrxCzDuKzCJcp1cHljjtD7l4Fg==", "user"=>{"first_name"=>"jim", "last_name"=>"him", "email"=>"j@j.com", "city"=>"seattle", "state"=>"WA", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'j@j.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "city", "state", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "jim"], ["last_name", "him"], ["email", "j@j.com"], ["city", "seattle"], ["state", "WA"], ["password_digest", "$2a$10$D.MBKH4m/oI7ikL1Uv9jHOlXrA9V.aH3BefCPwFViiVKAtQ3wMRXu"], ["created_at", "2016-09-26 20:53:10.971707"], ["updated_at", "2016-09-26 20:53:10.971707"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 72ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-09-26 13:53:10 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36mSong Load (0.0ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 19]]
+  Rendered songs/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-09-26 13:53:18 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 19]]
+  Rendered songs/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 13:53:18 -0700
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:53:30 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HsDPELCLSZMY5Iq1o1AWSyj9nlvKBrxSS8fZegYF66d3kelVzM+jUzxztxumtijbtY90HvCe1Qr1330zvLZ5zQ==", "artist"=>"U2", "title"=>"Beautiful Day", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "Beautiful Day"], ["artist", "U2"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("artist", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist", "U2"], ["title", "Beautiful Day"], ["created_at", "2016-09-26 20:53:30.873846"], ["updated_at", "2016-09-26 20:53:30.873846"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `plain' for #<SongsController:0x007fbdfc2e7018>):
+  app/controllers/songs_controller.rb:22:in `create'
+
+
+  Rendered /Users/gaston/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/gaston/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/gaston/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/gaston/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.4ms)
+  Rendered /Users/gaston/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/gaston/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/gaston/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/gaston/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/gaston/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.8ms)
+  Rendered /Users/gaston/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/gaston/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/gaston/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (95.3ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:53:56 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HsDPELCLSZMY5Iq1o1AWSyj9nlvKBrxSS8fZegYF66d3kelVzM+jUzxztxumtijbtY90HvCe1Qr1330zvLZ5zQ==", "artist"=>"U2", "title"=>"Beautiful Day", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "Beautiful Day"], ["artist", "U2"]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1[0m  [["artist", "U2"], ["title", "Beautiful Day"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["num_added", 1], ["updated_at", "2016-09-26 20:53:56.209340"], ["id", 16]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 16ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:53:56 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 19]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 19]]
+  Rendered songs/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 16.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 13:53:56 -0700
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:53:58 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u8C2XjH/usZghsDa0+rAjX1F/Sk02hjJefOm1bVNnV7SkZAbTbtQBkQR/XTWDP4d4DcXbA5CcZHH6wKcD/4PNA==", "artist"=>"", "title"=>"", "commit"=>"Save"}
+  [1m[36mSong Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", ""], ["artist", ""]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:54:08 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u8C2XjH/usZghsDa0+rAjX1F/Sk02hjJefOm1bVNnV7SkZAbTbtQBkQR/XTWDP4d4DcXbA5CcZHH6wKcD/4PNA==", "artist"=>"U2", "title"=>"Beautiful Day", "commit"=>"Save"}
+  [1m[35mSong Exists (0.2ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "Beautiful Day"], ["artist", "U2"]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1[0m  [["artist", "U2"], ["title", "Beautiful Day"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["num_added", 2], ["updated_at", "2016-09-26 20:54:08.669326"], ["id", 16]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:54:08 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 19]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 19]]
+  Rendered songs/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:54:15 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 19]]
+  [1m[35mSong Load (0.0ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 19]]
+  Rendered songs/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 13:54:15 -0700
+
+
+Started GET "/logout" for ::1 at 2016-09-26 13:54:19 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-09-26 13:54:19 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-09-26 13:54:29 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"asx6WgiJYmKy+vdxOCtFrkNv4SCtx9diDSvIobcOIdADnVwfdM2IopZtyt89zXs+3h0LZZdfvjqzM2zoDb2zug==", "email"=>"gastontk@hotmail.com", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "gastontk@hotmail.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 66ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-09-26 13:54:30 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:54:33 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"Gwqs5gcQXJ1AVqT20PxJzdYeGELSWvCQza473ZWVorByW4qje1S2XWTBmVjVGnddS2zyB+jCmchztp+ULyYw2g==", "artist"=>"Prince", "title"=>"Purple Rain"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "Purple Rain"], ["artist", "Prince"]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1[0m  [["artist", "Prince"], ["title", "Purple Rain"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["num_added", 17], ["updated_at", "2016-09-26 20:54:33.495625"], ["id", 1]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:54:33 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:54:36 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"LH7eLn2/dBrT5hP5mZIvICcRl8kUy0PkWSH+YJHNbjJFL/hrAfue2vdxLlecdBGwumN9jC5TKrznOVopK378WA==", "artist"=>"lkjljk", "title"=>"ljbkjhb"}
+  [1m[36mSong Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", "ljbkjhb"], ["artist", "lkjljk"]]
+  [1m[35mSong Load (0.0ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1  [["artist", "lkjljk"], ["title", "ljbkjhb"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?  [["num_added", 2], ["updated_at", "2016-09-26 20:54:36.060041"], ["id", 14]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:54:36 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:54:36 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"gXDmGUwolt9tiKuE/Le8CP8MfZAxC0nEjtmEoP+f39HoIcBcMGx8H0kflir5UYKYYn6X1QuTIJwwwSDpRSxNuw==", "artist"=>"lkjljk", "title"=>"ljbkjhb"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "ljbkjhb"], ["artist", "lkjljk"]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1[0m  [["artist", "lkjljk"], ["title", "ljbkjhb"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["num_added", 3], ["updated_at", "2016-09-26 20:54:36.794161"], ["id", 14]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:54:36 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:54:49 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLYaaQG6dFOYGhdx1aAxsnDVWoW4pVS7EsbefdtXHuLR5zwsff6ek7yNKt/QRg8i7aewwII9PeOs3no0YeSMiA==", "artist"=>"", "title"=>"", "commit"=>"Save"}
+  [1m[36mSong Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", ""], ["artist", ""]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:54:57 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLYaaQG6dFOYGhdx1aAxsnDVWoW4pVS7EsbefdtXHuLR5zwsff6ek7yNKt/QRg8i7aewwII9PeOs3no0YeSMiA==", "artist"=>"U2", "title"=>"", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", ""], ["artist", "U2"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:55:08 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLYaaQG6dFOYGhdx1aAxsnDVWoW4pVS7EsbefdtXHuLR5zwsff6ek7yNKt/QRg8i7aewwII9PeOs3no0YeSMiA==", "artist"=>"U2", "title"=>"Beautiful Day", "commit"=>"Save"}
+  [1m[36mSong Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", "Beautiful Day"], ["artist", "U2"]]
+  [1m[35mSong Load (0.0ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1  [["artist", "U2"], ["title", "Beautiful Day"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?  [["num_added", 3], ["updated_at", "2016-09-26 20:55:08.843208"], ["id", 16]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:55:08 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:55:12 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:55:12 -0700
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:55:21 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 13:55:21 -0700
+
+
+Started GET "/" for ::1 at 2016-09-26 13:55:26 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:56:38 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6gd9anKznlAY7Lgxe3wfTNr/+TYdpYBBAsXhPS3aJ5ODVlsvDvd0kDx7hZ9+miHcR40Tcyc96Rm83UV0l2m1+Q==", "artist"=>"The Doors", "title"=>"Riders On The Storm", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "Riders On The Storm"], ["artist", "The Doors"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  Rendered text template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:57:12 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6gd9anKznlAY7Lgxe3wfTNr/+TYdpYBBAsXhPS3aJ5ODVlsvDvd0kDx7hZ9+miHcR40Tcyc96Rm83UV0l2m1+Q==", "artist"=>"The Doors", "title"=>"Riders On The Storm", "commit"=>"Save"}
+  [1m[36mSong Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", "Riders On The Storm"], ["artist", "The Doors"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:57:21 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6gd9anKznlAY7Lgxe3wfTNr/+TYdpYBBAsXhPS3aJ5ODVlsvDvd0kDx7hZ9+miHcR40Tcyc96Rm83UV0l2m1+Q==", "artist"=>"The Doors", "title"=>"Riders On The Storm", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "Riders On The Storm"], ["artist", "The Doors"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  Rendered text template (0.0ms)
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:57:57 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6gd9anKznlAY7Lgxe3wfTNr/+TYdpYBBAsXhPS3aJ5ODVlsvDvd0kDx7hZ9+miHcR40Tcyc96Rm83UV0l2m1+Q==", "artist"=>"The Doors", "title"=>"Riders On The Storm", "commit"=>"Save"}
+  [1m[36mSong Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", "Riders On The Storm"], ["artist", "The Doors"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("artist", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["artist", "The Doors"], ["title", "Riders On The Storm"], ["created_at", "2016-09-26 20:57:57.622841"], ["updated_at", "2016-09-26 20:57:57.622841"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  Rendered text template (0.0ms)
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-09-26 13:58:08 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 18.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:58:26 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mLNBKUTq6ML4CISQSqN/R/Os4COwtv5yQG7WiEm6ltXx4mdsOK4CAtyfuT5PRUHXbt4KZooulyr+dnLB8wkEvw==", "artist"=>"Prince", "title"=>"Purple Rain", "commit"=>"Save"}
+  [1m[36mSong Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", "Purple Rain"], ["artist", "Prince"]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1  [["artist", "Prince"], ["title", "Purple Rain"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?  [["num_added", 18], ["updated_at", "2016-09-26 20:58:26.164381"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:58:26 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:59:11 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 22.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 13:59:11 -0700
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 13:59:34 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IyZdwERV3cEqNmNw+ynxaLiB+eFcAMIzU/zZwuTMAdBKd3uFOBE3AQ6hXt7+z8/4JfMTpGaYq2vt5H2LXn+Tug==", "artist"=>"Blues Traveler", "title"=>"Harmonica based song", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "Harmonica based song"], ["artist", "Blues Traveler"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("artist", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist", "Blues Traveler"], ["title", "Harmonica based song"], ["created_at", "2016-09-26 20:59:34.517775"], ["updated_at", "2016-09-26 20:59:34.517775"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 13:59:34 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:00:30 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 20.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 14:00:30 -0700
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:00:32 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ublCvXhfmuVZivKr0Qs5jhQXyDL2I5n36YFS8IXfIRXQ6GT4BBtwJX0dzwXU7QceiWUid8y78K9Xmfa5P2yzfw==", "artist"=>"", "title"=>"", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", ""], ["artist", ""]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:00:36 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 14:00:36 -0700
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:00:38 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b/Jd25/IXBvT89EV7KrX+MHtamLXtMjj0ZC8VXcNo7sGo3ue44y22/dk7LvpTOloXJ+AJ+0sobtviBgczb4x0Q==", "artist"=>"", "title"=>"", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", ""], ["artist", ""]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:01:20 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 19.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 14:01:20 -0700
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:01:21 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vp58R9AyeRJxUWwrbr8ovzdiCC3FuHpYYE0Kf957Gyw/z1oCrHaT0lXGUYVrWRYvqhDiaP8gEwDeVa42ZMiJRg==", "artist"=>"", "title"=>"", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", ""], ["artist", ""]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:02:11 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 14:02:11 -0700
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:02:12 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aP7gdGJC3ojoRTUPcZgjDhS+h/kfOJ2EhRwavD8mqBgBr8YxHgY0SMzSCKF0fh2eicxtvCWg9Nw7BL71hZU6cg==", "artist"=>"", "title"=>"", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", ""], ["artist", ""]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:02:51 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aP7gdGJC3ojoRTUPcZgjDhS+h/kfOJ2EhRwavD8mqBgBr8YxHgY0SMzSCKF0fh2eicxtvCWg9Nw7BL71hZU6cg==", "artist"=>"", "title"=>"", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", ""], ["artist", ""]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:03:36 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aP7gdGJC3ojoRTUPcZgjDhS+h/kfOJ2EhRwavD8mqBgBr8YxHgY0SMzSCKF0fh2eicxtvCWg9Nw7BL71hZU6cg==", "artist"=>"Prince", "title"=>"Little Red Corvette", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "Little Red Corvette"], ["artist", "Prince"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("artist", "title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["artist", "Prince"], ["title", "Little Red Corvette"], ["user_id", 1], ["created_at", "2016-09-26 21:03:36.576360"], ["updated_at", "2016-09-26 21:03:36.576360"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/index
+Completed 302 Found in 15ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/index" for ::1 at 2016-09-26 14:03:36 -0700
+Processing by UsersController#route_error as HTML
+  Parameters: {"path"=>"index"}
+  Rendered users/route_error.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:04:09 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 31ms (Views: 20.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 14:04:09 -0700
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:04:19 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cTrBUg+EkIHwa/GkvCKlujj9mdNe4rA7mmTRba+bRHsYa+cXc8B6QdT8zAq5xJsqpY9zlmR62WMkfHUkFSjWEQ==", "artist"=>"Prince", "title"=>"Little Nicky", "commit"=>"Save"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "Little Nicky"], ["artist", "Prince"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("artist", "title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["artist", "Prince"], ["title", "Little Nicky"], ["user_id", 1], ["created_at", "2016-09-26 21:04:19.621079"], ["updated_at", "2016-09-26 21:04:19.621079"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:04:19 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:04:22 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"/9zn+tqQT83bMUFx8FxCfkVqwXZ0s8S4vhAsvThImxSWjcG/ptSlDf+mfN/1unzu2BgrM04rreAACIj0gvsJfg==", "artist"=>"Prince", "title"=>"Little Nicky"}
+  [1m[36mSong Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", "Little Nicky"], ["artist", "Prince"]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1  [["artist", "Prince"], ["title", "Little Nicky"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?  [["num_added", 1], ["updated_at", "2016-09-26 21:04:22.587437"], ["id", 20]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 5ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:04:22 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:04:23 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"sOf5vf0zH5zAQTV1pqiYfBNf+5BGH6QAoOVH/V8utCbZtt/4gXf1XOTWCNujTqbsji0R1XyHzVge/eO05Z0mTA==", "artist"=>"Prince", "title"=>"Little Nicky"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "Little Nicky"], ["artist", "Prince"]]
+  [1m[36mSong Load (0.0ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1[0m  [["artist", "Prince"], ["title", "Little Nicky"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["num_added", 2], ["updated_at", "2016-09-26 21:04:23.241693"], ["id", 20]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:04:23 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:04:53 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 20.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/secureme.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started GET "/assets/secureme.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-26 14:04:53 -0700
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:04:55 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"In0Ql4BD12Ld7ncIZeGc0PNSIDcZGGSivRRWFfu3dQNLLDbS/Ac9ovl5SqZgB6JAbiDKciOADfoDDPJcQQTnaQ==", "artist"=>"", "title"=>"", "commit"=>"Save"}
+  [1m[36mSong Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", ""], ["artist", ""]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:05:09 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"In0Ql4BD12Ld7ncIZeGc0PNSIDcZGGSivRRWFfu3dQNLLDbS/Ac9ovl5SqZgB6JAbiDKciOADfoDDPJcQQTnaQ==", "artist"=>"Prince", "title"=>"Some Other Song", "commit"=>"Save"}
+  [1m[36mSong Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", "Some Other Song"], ["artist", "Prince"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("artist", "title", "user_id", "num_added", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["artist", "Prince"], ["title", "Some Other Song"], ["user_id", 1], ["num_added", 1], ["created_at", "2016-09-26 21:05:09.910725"], ["updated_at", "2016-09-26 21:05:09.910725"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:05:09 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation.html.erb (16.6ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:05:14 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"71n8KzAaNZY7gUyhPeWyV6Lq+Rdr/bGqwoyd01O7WcyGCNpuTF7fVh8WcQ84A4zHP5gTUlFl2PJ8lDma6QjLpg==", "artist"=>"michael jackson", "title"=>"thriller"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "thriller"], ["artist", "michael jackson"]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1[0m  [["artist", "michael jackson"], ["title", "thriller"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["num_added", 1], ["updated_at", "2016-09-26 21:05:14.917648"], ["id", 13]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:05:14 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:05:15 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"6qqldhDdvmYeMpK5cWNPRZ6bNVZuJ2YGdx++H3ZjbpKD+4MzbJlUpjqlrxd0hXHVA+nfE1S/D17JBxpWzND8+A==", "artist"=>"michael jackson", "title"=>"thriller"}
+  [1m[36mSong Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", "thriller"], ["artist", "michael jackson"]]
+  [1m[35mSong Load (0.0ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1  [["artist", "michael jackson"], ["title", "thriller"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?  [["num_added", 2], ["updated_at", "2016-09-26 21:05:15.310157"], ["id", 13]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:05:15 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:05:15 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"9r6A26WvgJKtTA4UJTCfOi6viUjIGvHtZ4yCpsLebJ+f76ae2etqUonbM7og1qGqs91jDfKCmLXZlCbveG3+9Q==", "artist"=>"michael jackson", "title"=>"thriller"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "thriller"], ["artist", "michael jackson"]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1[0m  [["artist", "michael jackson"], ["title", "thriller"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["num_added", 3], ["updated_at", "2016-09-26 21:05:15.467948"], ["id", 13]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:05:15 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:05:15 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"UnhBIhyAIHtHu679bZ++3LL9PyttqKpOgfF7RvZcDZI7KWdnYMTKu2Msk1NoeYBML4/VblcwwxY/6d8PTO+f+A==", "artist"=>"michael jackson", "title"=>"thriller"}
+  [1m[36mSong Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", "thriller"], ["artist", "michael jackson"]]
+  [1m[35mSong Load (0.0ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1  [["artist", "michael jackson"], ["title", "thriller"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?  [["num_added", 4], ["updated_at", "2016-09-26 21:05:15.610427"], ["id", 13]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:05:15 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:05:15 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"Okygh1EUi+bBxwdZm+z/omdm/IbrcTP5Kx5yFdix65ZTHYbCLVBhJuVQOveeCsEy+hQWw9HpWqGVBtZcYgJ5/A==", "artist"=>"michael jackson", "title"=>"thriller"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "thriller"], ["artist", "michael jackson"]]
+  [1m[36mSong Load (0.0ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1[0m  [["artist", "michael jackson"], ["title", "thriller"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["num_added", 5], ["updated_at", "2016-09-26 21:05:15.754202"], ["id", 13]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:05:15 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:05:15 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"uBk0cnTYhaFEOl9/FdJr/mrb0AyfQ4mkyi/ZMB5A9pHRSBI3CJxvYWCtYtEQNFVu96k6SaXb4Px0N315pPNk+w==", "artist"=>"michael jackson", "title"=>"thriller"}
+  [1m[36mSong Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", "thriller"], ["artist", "michael jackson"]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1  [["artist", "michael jackson"], ["title", "thriller"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?  [["num_added", 6], ["updated_at", "2016-09-26 21:05:15.902185"], ["id", 13]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:05:15 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:05:17 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"a5a9CpP+AmNy/4LwJQGWgipfxOVmupdhfqWNz5p+RXQCx5tP77roo1Zov14g56gSty0uoFwi/jnAvSmGIM3XHg==", "artist"=>"lkjljk", "title"=>"ljbkjhb"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "ljbkjhb"], ["artist", "lkjljk"]]
+  [1m[36mSong Load (0.0ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1[0m  [["artist", "lkjljk"], ["title", "ljbkjhb"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["num_added", 4], ["updated_at", "2016-09-26 21:05:17.461002"], ["id", 14]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:05:17 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:05:17 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"L/TmTGx++KZcY3FgrFI7Jh5e8LP4SadEk7lkyQlKRMRGpcAJEDoSZnj0TM6ptAW2gywa9sLRzhwtocCAs/nWrg==", "artist"=>"lkjljk", "title"=>"ljbkjhb"}
+  [1m[36mSong Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", "ljbkjhb"], ["artist", "lkjljk"]]
+  [1m[35mSong Load (0.0ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1  [["artist", "lkjljk"], ["title", "ljbkjhb"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?  [["num_added", 5], ["updated_at", "2016-09-26 21:05:17.618521"], ["id", 14]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:05:17 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:05:17 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"clySy3VTOlcW8XypCfmq3ApoP7RcLjiAX1WarRH/18cbDbSOCRfQlzJmQQcMH5RMlxrV8Wa2UdjhTT7kq0xFrQ==", "artist"=>"lkjljk", "title"=>"ljbkjhb"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "ljbkjhb"], ["artist", "lkjljk"]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1[0m  [["artist", "lkjljk"], ["title", "ljbkjhb"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["num_added", 6], ["updated_at", "2016-09-26 21:05:17.778170"], ["id", 14]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:05:17 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:05:17 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"lyIv2/Kx/3zbh57+nVAPBOUrk/Rk4Ji9/YT44NfO0uH+cwmejvUVvP8Qo1CYtjGUeFl5sV548eVDnFypbX1Aiw==", "artist"=>"lkjljk", "title"=>"ljbkjhb"}
+  [1m[36mSong Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1[0m  [["title", "ljbkjhb"], ["artist", "lkjljk"]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1  [["artist", "lkjljk"], ["title", "ljbkjhb"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?  [["num_added", 7], ["updated_at", "2016-09-26 21:05:17.948463"], ["id", 14]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:05:17 -0700
+Processing by SongsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_song" for ::1 at 2016-09-26 14:05:18 -0700
+Processing by SongsController#create as HTML
+  Parameters: {"authenticity_token"=>"qHqyaAg1NDOMOXsXz//wgPq9raZh6HSv5T0bWZvChDXBK5QtdHHe86iuRrnKGc4QZ89H41twHfdbJb8QIXEWXw==", "artist"=>"lkjljk", "title"=>"ljbkjhb"}
+  [1m[35mSong Exists (0.1ms)[0m  SELECT  1 AS one FROM "songs" WHERE "songs"."title" = ? AND "songs"."artist" = ? LIMIT 1  [["title", "ljbkjhb"], ["artist", "lkjljk"]]
+  [1m[36mSong Load (0.0ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."artist" = ? AND "songs"."title" = ? LIMIT 1[0m  [["artist", "lkjljk"], ["title", "ljbkjhb"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "songs" SET "num_added" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["num_added", 8], ["updated_at", "2016-09-26 21:05:18.154915"], ["id", 14]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/songs_index
+Completed 302 Found in 4ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/songs_index" for ::1 at 2016-09-26 14:05:18 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."user_id" = ?  [["user_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.2ms)
