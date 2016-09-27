@@ -1,8 +1,19 @@
 class SongsController < ApplicationController
-	def index
-		@songs = Song.where(:user_id => current_user.id)
-	end
+	before_filter :authorize
 
+
+
+	def index
+		# render plain: "adsfasfdfasdfsdfsd"
+		# @songs = Song.where(:user_id => current_user.id)
+		# render '/songs_index'
+
+		@songs=Song.all
+	end
+	# def show
+	# 	render plain: "WTF??"
+	# end
+    
 
 
 
@@ -14,19 +25,24 @@ class SongsController < ApplicationController
 
 			@song.increment!(:num_added, 1)
 			@song.save
-			redirect_to '/songs_index'
+			@songs=Song.all
+
+      		redirect_to root_path
 		else 
 			
 			@song = Song.new(song_params)
 			@song.user_id = current_user.id
 			@song.num_added = 1
+			@songs=Song.all
 			# render plain: @song.user_id
 			if @song.save
 				# render plain: @song.title
-				redirect_to '/songs_index'
-			else
-				render plain: "The song is new, but it wasn't saved."
+      			redirect_to root_path
+   			else
+     			 render 'songs/index'
+			
 			end
+
 		end
 
 		# @song.user_id = current_user.id

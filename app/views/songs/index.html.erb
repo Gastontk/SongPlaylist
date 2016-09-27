@@ -6,7 +6,7 @@
 
 <% if @songs %>
 
-	<table style='border:solid black;margin:10px;'>
+	<table style='border:solid lightblue;background-color:aliceblue;'>
 		<th>Artist:</th>
 		<th>Title:</th>
 		<th>Add to Playlist:</th>
@@ -17,7 +17,7 @@
 			<!-- <div style='background-color:grey;border:solid green;max-width:300px;'> -->
 				<td><%= t.artist %></td>
 				<td><%= link_to t.title, "http://msn.com" %></td>
-				<td><%= button_to "Add to Playlist", '/new_song', method: :post, params: { artist: t.artist, title:t.title} %></td>
+				<td><%= button_to "Add to Playlist", '/songs', method: :post, params: { artist: t.artist, title:t.title} %></td>
 
 
 				<td style='text-align:center;'><%=t.num_added%></td>
@@ -44,37 +44,31 @@
 
 
 <% if @song && @song.errors.any? %>
-
-
-
-
-
 	   <% brdr_color = 'border:solid red;background-color:pink;padding:1px;height:auto;width:300px' %>
       <div style='<%==brdr_color%>;'>
 	      <% count = 1 %>
 
-			<h3>Add New Song:</h3> 
+			<h3 style='margin:0;'>Add New Song:</h3> 
 	      <h1>Please fix the errors below to create a new Song.</h1>
 	      <% @song.errors.full_messages.each do |t| %>
 	         <h3>   <%= count %>:  <%=t %>. </h3>
 	          <% count+=1 %>
 	      <% end %>
 
-	      <div style ='background-color:aliceblue;max-width:200px;'>
+	      <div style ='padding:1px;background-color:aliceblue;max-width:200px;border:solid lightblue;'>
 		<%= form_tag '/new_song' do %>
 			Artist: <%= text_field_tag :artist, params[:artist] %>  <br>
 			Title: <%= text_field_tag :title, params[:title] %> <br>
 			<%= submit_tag %>
 		<% end %>
-
-</div>
   	</div>
+</div>
 
 
 <% else %>
-	<div style ='background-color:aliceblue;max-width:200px;'>
+	<div style ='padding:10px;background-color:aliceblue;max-width:200px;border:solid lightblue;'>
 	<%= form_tag '/new_song' do %>
-		<h3>Add New Song:</h3> <br>
+		<h3 style='margin:0;'>Add New Song:</h3> <br>
 		Artist: <%= text_field_tag :artist %> <br>
 		Title: <%= text_field_tag :title %> <br>
 		<%= submit_tag value="Save" %>

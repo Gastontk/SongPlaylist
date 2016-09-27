@@ -6,14 +6,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body style='background-color:lightgrey;'>
-	<a href="http://codingdojo.com"> <h1>Coding Dojo Rails Exam</h1></a>
-
-	<% if current_user %>
-		Hello!: <bold><%= current_user.first_name.capitalize  %> <%=  current_user.last_name.capitalize %></bold> | <%= link_to "Logout", '/logout' %>
-	<% else %>
-		<%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-	<% end %>
+<body style='background-color:lightgrey;margin:10px;'>
+	<a href="http://exams.codingdojo.com"> <h1>Coding Dojo Rails Exam</h1></a>
+		<% if current_user %>
+			Hello!: <bold><%= current_user.first_name.capitalize  %> <%=  current_user.last_name.capitalize %></bold> | <%= link_to "Logout", '/logout' %> <br> <br>
+		<% else %>
+			<%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %> <br> <br>
+		<% end %>
 
 <%= yield %>
 <!-- 

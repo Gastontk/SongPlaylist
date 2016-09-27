@@ -23,7 +23,7 @@ Rails.application.routes.draw do
 
   # songs routes
   get 'songs/index'
-
+  get '/new_song' => 'songs#index'
   post '/new_song' => 'songs#create'
 
   get '/songs_index' => 'songs#index'
